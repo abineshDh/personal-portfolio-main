@@ -1,0 +1,24 @@
+/* ROOT VARIABLES */
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --accent-color: ;
+    --background-color: ;
+    --text-color: ;
+}
+
+/* GLOBAL STYLES */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header nav {
+    padding: 10px;
+    margin: 0 10px;
+}
+
