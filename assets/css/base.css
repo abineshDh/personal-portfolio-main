@@ -19,6 +19,26 @@
 /* header */
 header nav {
     padding: 10px;
-    margin: 0 10px;
+    margin: 10px 10px;
+}
+
+/* hero section */
+section {
+    overflow-x: hidden;
+}
+
+#hero_section{
+    height: 90vh;
+}
+
+.mt-header{
+    margin-top: 75px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
