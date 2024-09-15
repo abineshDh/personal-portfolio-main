@@ -1,3 +1,4 @@
+
 // WhatsApp redirection when clicking Lets Talk button
 const whatsappBtn = document.querySelector("#whatsappBtn");
 
@@ -38,7 +39,6 @@ function typeText(element, text, speed, callback) {
     }
   }, speed);
 }
-
 // Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", () => {
   const h1Element = document.querySelector("#typing-h1");
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const h1Text = "Hi! I'm Abineshkumar";
   const h3Text = "An Aspiring Web Developer";
 
-  typeText(h1Element, h1Text, 100, () => {
-    typeText(h3Element, h3Text, 100);
+  typeText(h1Element, h1Text, 90, () => {
+    typeText(h3Element, h3Text, 90);
   });
 });
