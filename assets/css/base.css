@@ -34,9 +34,14 @@
     color: transparent; 
 }
 
+.letter-spacing{
+    letter-spacing: 3px;
+}
+
 section{
     min-height: 100vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    padding-bottom: 20px;
 }
 
 /* GLOBAL STYLES */
@@ -55,6 +60,7 @@ body {
     box-sizing: border-box;
     font-family: var(--font-family-base);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 h1 { 
@@ -72,6 +78,20 @@ h4 { font-size: 1.5rem; }
 h5 { font-size: 1.25rem; }
 h6 { font-size: 1rem; }
 
+/* Scroll-bar styling*/
+::-webkit-scrollbar {
+    width: 8px; 
+}
+  
+::-webkit-scrollbar-track {
+    background:  hsl(194.21deg 95% 7.84%) ; 
+}
+  
+::-webkit-scrollbar-thumb {
+    background: hsl(194, 97%, 25%); 
+    border-radius: 10px; 
+}
+  
 /* header */
 /* Nav bar -- hamburger button */
 .navbar-toggler{
@@ -251,9 +271,9 @@ h6 { font-size: 1rem; }
 
 /* Skills section */
 .skills-stack{
-    height: 160px !important;
-    width: 180px !important;
-    display: flex;
+    height: 150px !important;
+    width: 150px !important;
+    display: flex ;
     justify-content: center;
     align-items: center;
 }
@@ -271,13 +291,17 @@ h6 { font-size: 1rem; }
     -webkit-backdrop-filter: blur(10px); 
     border: 1px solid rgba(241, 101, 101, 0.027); 
 }
-
-.tech-stack{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
+/* media queries for skill-stack */
+@media (max-width: 576px) {
+    .tech-stack .skills-stack{
+        height: 120px;
+        width: 130px;
+    }
 }
+
+
+
+
 
 
 
