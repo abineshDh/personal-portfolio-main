@@ -80,7 +80,8 @@ h6 { font-size: 1rem; }
 
 /* Scroll-bar styling*/
 ::-webkit-scrollbar {
-    width: 8px; 
+    width: 5px; 
+    height: 3px;
 }
   
 ::-webkit-scrollbar-track {
@@ -88,8 +89,8 @@ h6 { font-size: 1rem; }
 }
   
 ::-webkit-scrollbar-thumb {
-    background: hsl(194, 97%, 25%); 
-    border-radius: 10px; 
+    background: rgb(245, 63, 245); 
+    /* border-radius: 10px;  */
 }
   
 /* header */
@@ -299,6 +300,167 @@ h6 { font-size: 1rem; }
     }
 }
 
+/* About Section */
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* About section card */
+.about-card{
+    min-height: 400px;
+    width: 700px;
+    /* background: linear-gradient(275deg, #1a151e61, #33526c) ; */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    z-index: 10;
+    color: whitesmoke;
+}
+
+.about-card{
+    display: grid;
+    place-items: center;
+}
+
+.about-title{
+    margin-bottom: 1rem;
+}
+
+.about-subtitle{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* resume button */
+.resume-btn {
+    margin-top: 25px;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .199);
+    background: linear-gradient(82.3deg, #965de9 10.8%, #6358ee 94.3%);
+    position: relative;
+    color: fefae0;
+}
+
+.resume-btn,
+.sign {
+    align-items: center;
+    transition-duration: .3s;
+    display: flex;
+}
+
+.sign {
+    width: 100%;
+    justify-content: center;
+    color: #fefae0;
+}
+
+.sign svg {
+    width: 17px;
+}
+
+.text {
+    right: 0;
+    width: 0%;
+    opacity: 0;
+    font-size: 1em;
+    font-weight: 600;
+    transition-duration: .3s;
+    color: #fefae0;
+}
+
+.resume-btn:hover {
+    width: 130px;
+    border-radius: 40px;
+    transition-duration: .3s
+}
+
+.resume-btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px
+}
+
+.resume-btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px
+}
+
+.resume-btn:active {
+    transform: translate(2px, 2px)
+}
+ 
+/* Animated blob behind the card */
+.blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(
+      180deg,
+      rgba(47, 184, 255,0.42) 31.77%,
+      #5c9df1 100%
+    );
+    mix-blend-mode: color-dodge;
+    -webkit-animation: move 25s infinite alternate;
+            animation: move 25s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+  }
+  
+  /* .blob:hover {
+    width: 520px;
+    height: 520px;
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
+    box-shadow:
+      inset 0 0 0 5px rgba(255,255,255, 0.6),
+      inset 100px 100px 0 0px #fa709a,
+      inset 200px 200px 0 0px #784ba8,
+      inset 300px 300px 0 0px #2b86c5;
+  } */
+  
+  @-webkit-keyframes move {
+    from {
+      transform: translate(-100px, -50px) rotate(-90deg);
+      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+  
+    to {
+      transform: translate(500px, 100px) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+  }
+  
+  @keyframes move {
+    from {
+      transform: translate(-100px, -50px) rotate(-90deg);
+      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+  
+    to {
+      transform: translate(500px, 100px) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+  }
 
 
 
